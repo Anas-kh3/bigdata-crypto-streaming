@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# Spark
+*.crc
+checkpoint/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
