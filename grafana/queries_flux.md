@@ -7,6 +7,7 @@ from(bucket: "crypto")
   |> filter(fn: (r) => r._measurement == "crypto_1min")
   |> filter(fn: (r) => r._field == "avg_price")
   |> filter(fn: (r) => r.symbol == "btc" or r.symbol == "eth")
+
 ## 2) Latest BTC price (Stat / Gauge)
 from(bucket: "crypto")
   |> range(start: -7d)
